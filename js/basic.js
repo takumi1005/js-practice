@@ -1,4 +1,8 @@
 "use strict";
 
 console.log("Hello World");
-console.log("Hello World again!");
+
+// \nで改行\tでタブを作成できる
+console.log("hel\nlo wor\tld");
+// 文字列の連結
+console.log("hello" + "world");
