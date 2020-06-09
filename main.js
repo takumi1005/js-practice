@@ -1,10 +1,13 @@
 "use strict";
 
-const div = document.createElement("div");
-div.classList.add("box");
+for (let i = 0; i < 100; i++) {
+  const div = document.createElement("div");
+  div.classList.add("box");
+  div.textContent = i;
 
-div.addEventListener("click", () => {
-  div.classList.toggle("circle");
-});
+  div.addEventListener("click", () => {
+    div.classList.toggle("circle");
+  });
 
-document.body.appendChild(div);
+  document.body.appendChild(div);
+}
