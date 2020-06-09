@@ -7,7 +7,7 @@ console.log("Hello World");
 console.log("hel\nlo wor\tld");
 // 文字列の連結
 console.log("hello" + "world");
-*/
+
 
 // 数値の計算
 // 足し算
@@ -25,3 +25,10 @@ console.log(10 ** 3); // 1000
 // 計算の優先度
 console.log(2 + 10 * 3); // 32
 console.log((2 + 10) * 3); // 36
+*/
+
+// 定数を使用
+const price = 150;
+
+console.log(price * 140);
+console.log(price * 160);
