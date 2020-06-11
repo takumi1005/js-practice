@@ -217,7 +217,7 @@ const sum = function (a, b, c) {
 };
 const total = sum(1, 2, 3) + sum(3, 4, 5);
 console.log(total);
-*/
+
 // アロー関数
 // const sum = (a, b, c) => a + b + c;
 // const total = sum(1, 2, 3) + sum(3, 4, 5);
@@ -229,3 +229,12 @@ console.log(total);
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 const double = (a) => a * 2;
 console.log(double(12));
+*/
+// スコープについて
+const x = 2;
+function f() {
+  const x = 1; //こちらが優先
+  console.log(x);
+}
+f();
+console.log(x);
