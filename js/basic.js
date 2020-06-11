@@ -95,9 +95,26 @@ if (score >= 80) {
 } else {
   console.log("OK...");
 }
-*/
 
 // 条件演算子
 const score = 85;
 // 条件式        trueの処理               falseの処理
 score >= 80 ? console.log("Great!") : console.log("Good.");
+*/
+
+// 論理演算子
+const score = 60;
+const name = "taguti";
+
+// if (score >= 50) {
+//   if (name === "taguti") {
+//     console.log("Good job!");
+//   }
+// }
+
+// && なおかつ（AND）
+// || もしくは（OR）
+// ! 〜ではない（NOT）
+if (score >= 50 && name === "taguti") {
+  console.log("Good job!");
+}
