@@ -54,7 +54,7 @@ price++; // 1201
 price--; // 1200
 
 console.log(price);
-*/
+
 
 // データ型について  typeofを使って型を確認出来る
 console.log(typeof "hello");
@@ -62,3 +62,12 @@ console.log(typeof 5);
 console.log(typeof true);
 console.log(typeof undefined);
 console.log(typeof null);
+*/
+
+// 数字からなる文字列
+// console.log('5' * 3);  掛け算される
+// console.log('5' - '3');  引き算される
+// console.log('5' + 3);  連結され53と出力される
+// console.log(parseInt('5', 10) + 3);  数値型に変換され8と出力される
+// console.log(parseInt('hello', 10));  NaNと出力される
+
