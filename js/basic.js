@@ -135,10 +135,24 @@ switch (signal) {
     console.log("Wrong signal!");
     break;
 }
-*/
+
 // for文
 for (let i = 1; i <= 10; i++) {
   // console.log("hello");
   // console.log("hello" + i);
   console.log(`hello ${i}`);
 }
+*/
+// while文
+// let hp = 100;
+
+// while (hp > 0) {
+//   console.log(`${hp} HP left!`);
+//   hp -= 15;
+// }
+let hp = -50;
+
+do {
+  console.log(`${hp} HP left!`);
+  hp -= 15;
+} while (hp > 0);
