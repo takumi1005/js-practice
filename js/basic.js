@@ -229,7 +229,7 @@ console.log(total);
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 const double = (a) => a * 2;
 console.log(double(12));
-*/
+
 // スコープについて
 const x = 2;
 function f() {
@@ -238,3 +238,9 @@ function f() {
 }
 f();
 console.log(x);
+*/
+// コードをブロックで囲む
+{
+  const x = 100;
+  console.log(x);
+}
