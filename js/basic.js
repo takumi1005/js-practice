@@ -168,7 +168,7 @@ for (let i = 1; i <= 10; i++) {
   }
   console.log(i);
 }
-*/
+
 // 関数で処置をまとめる
 function showAd() {
   console.log("----------");
@@ -183,3 +183,20 @@ showAd();
 console.log("Steve is great!");
 console.log("Richard is great!");
 showAd();
+*/
+// 引数を使う
+function showAd(message = "Ad") {
+  // 仮引数
+  console.log("----------");
+  console.log(`--- ${message} ---`);
+  console.log("----------");
+}
+
+showAd("Header Ad"); // 実引数
+console.log("Tom is great!");
+console.log("Bob is great!");
+// showAd('Ad');
+showAd();
+console.log("Steve is great!");
+console.log("Richard is great!");
+showAd("Footer Ad");
