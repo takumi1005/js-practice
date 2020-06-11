@@ -84,7 +84,6 @@ const price = 1200;
 // true <- それ以外
 console.log(Boolean(0));
 console.log(Boolean("hello"));
-*/
 
 // 条件分岐 if
 const score = 40;
@@ -96,3 +95,9 @@ if (score >= 80) {
 } else {
   console.log("OK...");
 }
+*/
+
+// 条件演算子
+const score = 85;
+// 条件式        trueの処理               falseの処理
+score >= 80 ? console.log("Great!") : console.log("Good.");
