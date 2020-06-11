@@ -142,7 +142,7 @@ for (let i = 1; i <= 10; i++) {
   // console.log("hello" + i);
   console.log(`hello ${i}`);
 }
-*/
+
 // while文
 // let hp = 100;
 
@@ -156,3 +156,15 @@ do {
   console.log(`${hp} HP left!`);
   hp -= 15;
 } while (hp > 0);
+*/
+// continue,break
+for (let i = 1; i <= 10; i++) {
+  // if (i === 4) {
+  // if (i % 3 === 0) {
+  // continue;  条件の処理をスキップ
+  // }
+  if (i === 4) {
+    break; //以降の処理を止める
+  }
+  console.log(i);
+}
