@@ -22,7 +22,7 @@
 
   console.log(scores.length);
 }
-*/
+
 // 配列とループ処理
 {
   const scores = [80, 90, 40, 70];
@@ -31,4 +31,14 @@
   // 下記のようにすれば配列の中身が増えても対応できる
   for (let i = 0; i < scores.length; i++)
     console.log(`Score ${i}: ${scores[i]}`);
+}
+*/
+// 配列の要素を変更
+{
+  const scores = [80, 90, 40, 70];
+  scores.push(60, 50); //配列の最後に要素を追加
+  scores.shift(); //最初の要素を削除
+  for (let i = 0; i < scores.length; i++) {
+    console.log(`Score ${i}: ${scores[i]}`);
+  }
 }
