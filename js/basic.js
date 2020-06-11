@@ -37,7 +37,6 @@ let price = 150;
 price = 170;
 console.log(price * 140);
 console.log(price * 160);
-*/
 
 // 変数の計算
 let praice = 500;
@@ -55,3 +54,11 @@ price++; // 1201
 price--; // 1200
 
 console.log(price);
+*/
+
+// データ型について  typeofを使って型を確認出来る
+console.log(typeof "hello");
+console.log(typeof 5);
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
