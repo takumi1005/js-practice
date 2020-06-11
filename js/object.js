@@ -42,7 +42,7 @@
     console.log(`Score ${i}: ${scores[i]}`);
   }
 }
-*/
+
 // splice()で配列を変更
 {
   const scores = [80, 90, 40, 70];
@@ -50,4 +50,16 @@
   for (let i = 0; i < scores.length; i++) {
     console.log(`Score ${i}: ${scores[i]}`);
   }
+}
+*/
+// スプレッド構文
+{
+  const otherScores = [10, 20];
+  const scores = [80, 90, 40, 70, ...otherScores]; //...を使うことで別の配列を展開できる
+  // console.log(scores);
+
+  function sum(a, b) {
+    console.log(a + b);
+  }
+  sum(...otherScores);
 }
