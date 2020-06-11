@@ -117,7 +117,6 @@ const name = "taguti";
 if (score >= 50 && name === "taguti") {
   console.log("Good job!");
 }
-*/
 
 // switch文
 const signal = "pink";
@@ -135,4 +134,11 @@ switch (signal) {
   default:
     console.log("Wrong signal!");
     break;
+}
+*/
+// for文
+for (let i = 1; i <= 10; i++) {
+  // console.log("hello");
+  // console.log("hello" + i);
+  console.log(`hello ${i}`);
 }
