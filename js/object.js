@@ -63,7 +63,7 @@
   }
   sum(...otherScores);
 }
-*/
+
 // 分割代入
 {
   const scores = [80, 90, 40, 70];
@@ -83,4 +83,12 @@
   [x, y] = [y, x]; //xとyの値を入れ替え出来る
   console.log(x);
   console.log(y);
+}
+*/
+// forEach()を使ってみる
+{
+  const scores = [80, 90, 40, 70];
+  scores.forEach((score, index) => {
+    console.log(`Score ${index}: ${score}`);
+  });
 }
