@@ -118,7 +118,7 @@
   const evenNumbers = numbers.filter((number) => number % 2 === 0);
   console.log(evenNumbers);
 }
-*/
+
 // オブジェクトを作る
 {
   // const point = [100, 180];
@@ -126,4 +126,23 @@
     x: 100,
     y: 180,
   };
+}
+*/
+// プロパティを操作する
+{
+  const point = {
+    x: 100,
+    y: 180,
+  };
+  // 数値を変更したい
+  point.x = 120;
+  // point["x"] = 120;
+
+  console.log(point.x);
+  console.log(point["y"]);
+  // 座標を追加
+  point.z = 90;
+  // 座標を削除
+  delete point.y;
+  console.log(point);
 }
