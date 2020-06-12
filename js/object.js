@@ -84,11 +84,23 @@
   console.log(x);
   console.log(y);
 }
-*/
+
 // forEach()を使ってみる
 {
   const scores = [80, 90, 40, 70];
   scores.forEach((score, index) => {
     console.log(`Score ${index}: ${score}`);
   });
+}
+*/
+// mapを使う
+{
+  const prices = [180, 190, 200];
+
+  // const updatePrices = prices.map((price) => {
+  //   return price + 20;
+  // });
+  // 省略すると↓
+  const updatePrices = prices.map((price) => price + 20);
+  console.log(updatePrices);
 }
