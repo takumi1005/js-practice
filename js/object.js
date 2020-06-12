@@ -104,7 +104,7 @@
   const updatePrices = prices.map((price) => price + 20);
   console.log(updatePrices);
 }
-*/
+
 // filterを使う
 {
   const numbers = [1, 4, 7, 8, 10];
@@ -117,4 +117,13 @@
   // });
   const evenNumbers = numbers.filter((number) => number % 2 === 0);
   console.log(evenNumbers);
+}
+*/
+// オブジェクトを作る
+{
+  // const point = [100, 180];
+  const point = {
+    x: 100,
+    y: 180,
+  };
 }
