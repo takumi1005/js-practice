@@ -146,7 +146,7 @@
   delete point.y;
   console.log(point);
 }
-*/
+
 // オブジェクトを操作
 {
   const otherProps = {
@@ -163,4 +163,22 @@
   console.log(x);
   console.log(r);
   console.log(others);
+}
+*/
+// Object.keys()を使う
+{
+  const point = {
+    x: 100,
+    y: 180,
+  };
+  // const keys = Object.keys(point);
+  // keys.forEach((key) => {
+  //   console.log(`key: ${key} value: ${point[key]}`);
+  // });
+  const points = [
+    { x: 30, y: 20 },
+    { x: 10, y: 50 },
+    { x: 40, y: 40 },
+  ];
+  console.log(points[1].y);
 }
