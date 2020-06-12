@@ -127,7 +127,7 @@
     y: 180,
   };
 }
-*/
+
 // プロパティを操作する
 {
   const point = {
@@ -145,4 +145,22 @@
   // 座標を削除
   delete point.y;
   console.log(point);
+}
+*/
+// オブジェクトを操作
+{
+  const otherProps = {
+    r: 4,
+    color: "red",
+  };
+  const point = {
+    x: 100,
+    y: 180,
+    ...otherProps,
+  };
+  // console.log(point);
+  const { x, r, ...others } = point;
+  console.log(x);
+  console.log(r);
+  console.log(others);
 }
