@@ -19,7 +19,7 @@
     document.getElementById("target").textContent = "Changed!";
   });
 }
-*/
+
 // 要素の属性を操作
 {
   document.querySelector("button").addEventListener("click", () => {
@@ -28,5 +28,13 @@
     targetNode.title = "This is title!";
     targetNode.style.color = "red";
     targetNode.style.backgroundColor = "skyblue";
+  });
+}
+*/
+// classNameを操作
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const targetNode = document.getElementById("target");
+    targetNode.className = "my-color my-border";
   });
 }
