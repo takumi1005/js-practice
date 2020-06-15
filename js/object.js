@@ -257,7 +257,7 @@
   // 数値をランダムに生成
   console.log(Math.random());
 }
-*/
+
 // ランダムな整数値を生成
 {
   // console.log(Math.random());
@@ -270,4 +270,11 @@
   // Math.floor(Math.random() * (max + 1 - min)) + min;
   //1~6までのランダムな数値を生成
   console.log(Math.floor(Math.random() * 6) + 1);
+}
+*/
+// 現在日時を扱う
+{
+  const d = new Date();
+  // console.log(d);
+  console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
 }
