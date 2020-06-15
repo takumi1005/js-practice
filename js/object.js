@@ -205,7 +205,7 @@
   console.log(x); // [5, 2]
   console.log(y); // [1, 2]になる
 }
-*/
+
 // 文字列を操作
 {
   const str = "hello";
@@ -218,4 +218,19 @@
 
   // 文字列に対して配列のような記法を使うとここの文字にアクセスできる
   console.log(str[1]);
+}
+*/
+// join()､split()を使う
+{
+  const d = [2019, 11, 14];
+  // 配列の間に入れたい文字を指定
+  console.log(d.join("/"));
+
+  //文字列を区切り文字の場所で分割し、配列にする
+  const t = "17:08:24";
+  // console.log(t.split(":"));
+  const [hour, minute, second] = t.split(":");
+  console.log(hour);
+  console.log(minute);
+  console.log(second);
 }
