@@ -30,11 +30,26 @@
     targetNode.style.backgroundColor = "skyblue";
   });
 }
-*/
+
 // classNameを操作
 {
   document.querySelector("button").addEventListener("click", () => {
     const targetNode = document.getElementById("target");
     targetNode.className = "my-color my-border";
+  });
+}
+*/
+// classListを使う
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const targetNode = document.getElementById("target");
+    // targetNode.classList.add('my-color');
+    // if (targetNode.classList.contains('my-color') === true) {
+    //   targetNode.classList.remove('my-color');
+    // } else {
+    //   targetNode.classList.add('my-color');
+    // }
+    //toggleを使って簡略化
+    targetNode.classList.toggle("my-color");
   });
 }
