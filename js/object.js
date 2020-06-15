@@ -287,7 +287,7 @@
   d.setDate(d.getDate() + 3); //2019/12/04 10:20:30
   console.log(d);
 }
-*/
+
 // alert()､confirm()を使う
 {
   // alert("hello");
@@ -298,4 +298,18 @@
   } else {
     console.log("キャンセルしました");
   }
+}
+*/
+// setInterval()を使う
+{
+  let i = 0;
+  function showTime() {
+    console.log(new Date());
+    i++;
+    if (i > 2) {
+      clearInterval(intervalId);
+    }
+  }
+
+  const intervalId = setInterval(showTime, 1000);
 }
