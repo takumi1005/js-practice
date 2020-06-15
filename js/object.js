@@ -219,7 +219,7 @@
   // 文字列に対して配列のような記法を使うとここの文字にアクセスできる
   console.log(str[1]);
 }
-*/
+
 // join()､split()を使う
 {
   const d = [2019, 11, 14];
@@ -233,4 +233,27 @@
   console.log(hour);
   console.log(minute);
   console.log(second);
+}
+*/
+// 数値を操作
+{
+  const scores = [10, 3, 9];
+  let sum = 0;
+  scores.forEach((score) => {
+    sum += score; //合計
+  });
+  const avg = sum / scores.length; //平均
+  // console.log(sum);
+  // console.log(avg);
+
+  // 小数点切り捨て
+  console.log(Math.floor(avg));
+  // 小数点切り上げ
+  console.log(Math.ceil(avg));
+  // 四捨五入
+  console.log(Math.round(avg));
+  // 小数点の指定した数まで表示
+  console.log(avg.toFixed(3));
+  // 数値をランダムに生成
+  console.log(Math.random());
 }
