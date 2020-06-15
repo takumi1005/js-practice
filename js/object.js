@@ -328,7 +328,7 @@
   }
   showTime();
 }
-*/
+
 // 例外処理
 {
   // const name = "taguchi";
@@ -339,4 +339,32 @@
     console.log(e); //String以外が入力されてもそのあとの処理まで実行する
   }
   console.log("Finish!");
+}
+*/
+// メソッドを使う
+{
+  const posts = [
+    {
+      text: "JavaScriptの勉強中…",
+      likeCount: 0,
+      // show: function() {
+      //   console.log(`${this.text} - ${this.likeCount}いいね`);
+      // },
+      //省略↓
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+    {
+      text: "プログラミング楽しい！",
+      likeCount: 0,
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+  ];
+
+  // show(posts[0]);
+  posts[0].show();
+  posts[1].show();
 }
