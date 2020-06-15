@@ -164,7 +164,7 @@
   console.log(r);
   console.log(others);
 }
-*/
+
 // Object.keys()を使う
 {
   const point = {
@@ -181,4 +181,27 @@
     { x: 40, y: 40 },
   ];
   console.log(points[1].y);
+}
+*/
+// 変数を代入・挙動を確認
+{
+  // let x = 1;
+  // let y = x;
+  // x = 5;
+  // console.log(x); // 5
+  // console.log(y); // 1
+
+  let x = [1, 2];
+  let y = x;
+  x[0] = 5;
+  console.log(x); // [5, 2]
+  console.log(y); // [1, 2]にならない
+  // yはxを参照している
+
+  //スプレッド演算子を使えば丸ごとコピーできる
+  let x = [1, 2];
+  let y = [...x];
+  x[0] = 5;
+  console.log(x); // [5, 2]
+  console.log(y); // [1, 2]になる
 }
