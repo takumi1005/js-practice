@@ -182,7 +182,7 @@
   ];
   console.log(points[1].y);
 }
-*/
+
 // 変数を代入・挙動を確認
 {
   // let x = 1;
@@ -204,4 +204,18 @@
   x[0] = 5;
   console.log(x); // [5, 2]
   console.log(y); // [1, 2]になる
+}
+*/
+// 文字列を操作
+{
+  const str = "hello";
+  // 文字列の数を取得
+  console.log(str.length); //
+
+  //部分文字列を取得
+  // str.substring(開始位置, 終了位置);
+  console.log(str.substring(2, 4));
+
+  // 文字列に対して配列のような記法を使うとここの文字にアクセスできる
+  console.log(str[1]);
 }
