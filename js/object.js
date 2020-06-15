@@ -271,10 +271,19 @@
   //1~6までのランダムな数値を生成
   console.log(Math.floor(Math.random() * 6) + 1);
 }
-*/
+
 // 現在日時を扱う
 {
   const d = new Date();
   // console.log(d);
   console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
+}
+*/
+// 特定の日時を扱う
+{
+  const d = new Date(2019, 10); //2019/11/01 00:00:00
+  d.setHours(10, 20, 30); //2019/11/01 10:20:30
+  d.setDate(31); //2019/12/01 10:20:30
+  d.setDate(d.getDate() + 3); //2019/12/04 10:20:30
+  console.log(d);
 }
