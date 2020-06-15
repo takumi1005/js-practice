@@ -313,7 +313,7 @@
 
   const intervalId = setInterval(showTime, 1000);
 }
-*/
+
 //setTimeout()を使う
 {
   let i = 0;
@@ -327,4 +327,16 @@
     }
   }
   showTime();
+}
+*/
+// 例外処理
+{
+  // const name = "taguchi";
+  const name = 5;
+  try {
+    console.log(name.toUpperCase()); // 大文字に変換(Stringのみ)
+  } catch (e) {
+    console.log(e); //String以外が入力されてもそのあとの処理まで実行する
+  }
+  console.log("Finish!");
 }
