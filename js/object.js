@@ -278,7 +278,7 @@
   // console.log(d);
   console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
 }
-*/
+
 // 特定の日時を扱う
 {
   const d = new Date(2019, 10); //2019/11/01 00:00:00
@@ -286,4 +286,16 @@
   d.setDate(31); //2019/12/01 10:20:30
   d.setDate(d.getDate() + 3); //2019/12/04 10:20:30
   console.log(d);
+}
+*/
+// alert()､confirm()を使う
+{
+  // alert("hello");
+
+  const answer = confirm("削除しますか?");
+  if (answer) {
+    console.log("削除しました");
+  } else {
+    console.log("キャンセルしました");
+  }
 }
