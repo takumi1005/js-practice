@@ -234,7 +234,7 @@
   console.log(minute);
   console.log(second);
 }
-*/
+
 // 数値を操作
 {
   const scores = [10, 3, 9];
@@ -256,4 +256,18 @@
   console.log(avg.toFixed(3));
   // 数値をランダムに生成
   console.log(Math.random());
+}
+*/
+// ランダムな整数値を生成
+{
+  // console.log(Math.random());
+
+  // 0, 1, 2からランダムな数値を生成したい
+  // Math.floor(Math.random() * 3);
+  // 0, ..., n 0からnまでのランダムな数値を生成したい
+  // Math.floor(Math.random() * (n + 1));
+  //min, ..., max minからmaxまでのランダムな数値を生成したい
+  // Math.floor(Math.random() * (max + 1 - min)) + min;
+  //1~6までのランダムな数値を生成
+  console.log(Math.floor(Math.random() * 6) + 1);
 }
