@@ -148,7 +148,7 @@
     document.querySelector("ul").appendChild(li);
   });
 }
-*/
+
 //いろいろなイベント
 {
   document.querySelector("button").addEventListener("dblclick", () => {
@@ -160,5 +160,25 @@
   // });
   document.addEventListener("keydown", (e) => {
     console.log(e.key);
+  });
+}
+*/
+//フォームで使われるイベント
+{
+  const text = document.querySelector("textarea");
+  // フォーカスが当たった時
+  // text.addEventListener("focus", () => {
+  //   console.log("focus");
+  // });
+  // // フォーカスが外れた時
+  // text.addEventListener("blur", () => {
+  //   console.log("blur");
+  // });
+  text.addEventListener("input", () => {
+    console.log("input");
+    console.log(text.value.length);
+  });
+  text.addEventListener("change", () => {
+    console.log("change");
   });
 }
