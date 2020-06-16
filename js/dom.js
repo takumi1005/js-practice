@@ -132,7 +132,7 @@
     document.querySelector("ul").appendChild(li);
   });
 }
-*/
+
 // チェックボックスを操作
 {
   document.querySelector("button").addEventListener("click", () => {
@@ -146,5 +146,19 @@
     const li = document.createElement("li");
     li.textContent = selectedColors.join("-");
     document.querySelector("ul").appendChild(li);
+  });
+}
+*/
+//いろいろなイベント
+{
+  document.querySelector("button").addEventListener("dblclick", () => {
+    console.log("Double Clicked!");
+  });
+  // document.addEventListener("mousemove", (e) => {
+  //   // console.log("moved!");
+  //   console.log(e.clientX, e.clientY);
+  // });
+  document.addEventListener("keydown", (e) => {
+    console.log(e.key);
   });
 }
