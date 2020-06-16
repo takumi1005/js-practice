@@ -72,7 +72,7 @@
     ul.appendChild(item2);
   });
 }
-*/
+
 // 要素の複製、挿入
 {
   document.querySelector("button").addEventListener("click", () => {
@@ -81,5 +81,15 @@
     const ul = document.querySelector("ul");
     const item2 = document.querySelectorAll("li")[2];
     ul.insertBefore(copy, item2);
+  });
+}
+*/
+// 要素を削除
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const item1 = document.querySelectorAll("li")[1];
+    // item1.remove(); //対応していないブラウザがある
+    // 親Node.removeChild(削除するNode)
+    document.querySelector("ul").removeChild(item1); //remove()に対応していない場合
   });
 }
