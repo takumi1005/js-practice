@@ -93,7 +93,7 @@
     document.querySelector("ul").removeChild(item1); //remove()に対応していない場合
   });
 }
-*/
+
 //input要素を操作
 {
   document.querySelector("button").addEventListener("click", () => {
@@ -104,5 +104,15 @@
 
     text.value = "";
     text.focus();
+  });
+}
+*/
+// セレクトボックスを操作
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const li = document.createElement("li");
+    const color = document.querySelector("select");
+    li.textContent = `${color.value} - ${color.selectedIndex}`;
+    document.querySelector("ul").appendChild(li);
   });
 }
