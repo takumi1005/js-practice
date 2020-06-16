@@ -83,7 +83,7 @@
     ul.insertBefore(copy, item2);
   });
 }
-*/
+
 // 要素を削除
 {
   document.querySelector("button").addEventListener("click", () => {
@@ -91,5 +91,18 @@
     // item1.remove(); //対応していないブラウザがある
     // 親Node.removeChild(削除するNode)
     document.querySelector("ul").removeChild(item1); //remove()に対応していない場合
+  });
+}
+*/
+//input要素を操作
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const li = document.createElement("li");
+    const text = document.querySelector("input");
+    li.textContent = text.value;
+    document.querySelector("ul").appendChild(li);
+
+    text.value = "";
+    text.focus();
   });
 }
