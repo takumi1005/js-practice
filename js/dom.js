@@ -38,7 +38,7 @@
     targetNode.className = "my-color my-border";
   });
 }
-*/
+
 // classListを使う
 {
   document.querySelector("button").addEventListener("click", () => {
@@ -51,5 +51,14 @@
     // }
     //toggleを使って簡略化
     targetNode.classList.toggle("my-color");
+  });
+}
+*/
+// カスタムデータ属性を扱う
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const targetNode = document.getElementById("target");
+    // targetNode.textContent = "Dotinstall";
+    targetNode.textContent = targetNode.dataset.translation;
   });
 }
