@@ -182,12 +182,21 @@
     console.log("change");
   });
 }
-*/
+
 // フォームを送信
 {
   document.querySelector("form").addEventListener("submit", (e) => {
     //規定の操作をキャンセル
     e.preventDefault();
     console.log("submit");
+  });
+}
+*/
+// イベントの伝播
+{
+  document.querySelector("ul").addEventListener("click", (e) => {
+    if (e.target.nodeName === "LI") {
+      e.target.classList.toggle("done");
+    }
   });
 }
