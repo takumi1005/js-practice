@@ -53,12 +53,22 @@
     targetNode.classList.toggle("my-color");
   });
 }
-*/
+
 // カスタムデータ属性を扱う
 {
   document.querySelector("button").addEventListener("click", () => {
     const targetNode = document.getElementById("target");
     // targetNode.textContent = "Dotinstall";
     targetNode.textContent = targetNode.dataset.translation;
+  });
+}
+*/
+// 要素を追加
+{
+  document.querySelector("button").addEventListener("click", () => {
+    const item2 = document.createElement("li");
+    item2.textContent = "item 2";
+    const ul = document.querySelector("ul");
+    ul.appendChild(item2);
   });
 }
