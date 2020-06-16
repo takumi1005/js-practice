@@ -162,7 +162,7 @@
     console.log(e.key);
   });
 }
-*/
+
 //フォームで使われるイベント
 {
   const text = document.querySelector("textarea");
@@ -180,5 +180,14 @@
   });
   text.addEventListener("change", () => {
     console.log("change");
+  });
+}
+*/
+// フォームを送信
+{
+  document.querySelector("form").addEventListener("submit", (e) => {
+    //規定の操作をキャンセル
+    e.preventDefault();
+    console.log("submit");
   });
 }
