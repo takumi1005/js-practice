@@ -1,3 +1,9 @@
+ul {
+  list-style: none;
+}
+button{
+  margin: 8px 0 0 8px;
+}
 .my-color {
   color: red;
   background-color: skyblue;
