@@ -8,10 +8,10 @@
     'middle',
     'set',
   ];
-  let word = words[Math.floor(Math.random() * words.length)];
-  let loc = 0;
-  let score = 0;
-  let miss = 0;
+  let word;
+  let loc;
+  let score;
+  let miss;
   const timeLimit = 3 * 1000;
   let startTime;
   let isPlaying;
@@ -42,6 +42,8 @@
       setTimeout(() => {
         showResult();
       }, 100);
+
+      target.textContent = 'click to replay';
     }
   }
 
@@ -56,6 +58,13 @@
       return;
     }
     isPlaying = true;
+
+    loc = 0;
+    score = 0;
+    miss = 0;
+    scoreLabel.textContent = score;
+    missLabel.textContent = miss;
+    word = words[Math.floor(Math.random() * words.length)];
     target.textContent = word;
     startTime = Date.now();
     updateTimer();
