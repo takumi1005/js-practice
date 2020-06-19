@@ -1,9 +1,9 @@
-'use srtict';
+'use strict';
 
 {
   const question = document.getElementById('question');
   const choices = document.getElementById('choices');
-  const btn = document.getElementById('question');
+  const btn = document.getElementById('btn');
 
   const quizSet = [
     {q: 'What is A?', c: ['A0', 'A1', 'A2']},
@@ -15,14 +15,13 @@
 
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i +1));
-    [arr[j] , arr[i]] = [arr[i], arr[j]];
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[j], arr[i]] = [arr[i], arr[j]];
     }
     return arr;
   }
 
-  function checkAnser(li) {
-    // if (isAnswered === true) {
+  function checkAnswer(li) {
     if (isAnswered) {
       return;
     }
@@ -33,21 +32,34 @@
     } else {
       li.classList.add('wrong');
     }
+
+    btn.classList.remove('disabled');
   }
+
   function setQuiz() {
     isAnswered = false;
+
     question.textContent = quizSet[currentNum].q;
+
+    while (choices.firstChild) {
+      choices.removeChild(choices.firstChild);
+    }
 
     const shuffledChoices = shuffle([...quizSet[currentNum].c]);
     shuffledChoices.forEach(choice => {
-    const li = document.createElement('li');
-    li.textContent = choice;
-    li.addEventListener('click', () => {
-      checkAnser(li);
-    })
-    choices.appendChild(li);
-  });
+      const li = document.createElement('li');
+      li.textContent = choice;
+      li.addEventListener('click', () => {
+        checkAnswer(li);
+      });
+      choices.appendChild(li);
+    });
   }
 
   setQuiz();
+
+  btn.addEventListener('click', () => {
+    currentNum++;
+    setQuiz();
+  });
 }
