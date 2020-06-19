@@ -1,19 +1,32 @@
+header {
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  width: 300px;
+}
+
 ul {
+  padding: 0;
+}
+
+ul li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 8px;
   list-style: none;
 }
-button{
-  margin: 8px 0 0 8px;
+
+ul li:hover {
+  background: #f8f8f8;
 }
-.my-color {
-  color: red;
-  background-color: skyblue;
-}
-.my-border {
-  border-bottom: 4px solid orange;
-}
-li {
-  cursor: pointer;
-}
-li.done {
-  text-decoration: line-through;
+
+a {
+  text-decoration: none;
 }
