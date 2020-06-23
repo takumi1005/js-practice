@@ -1,10 +1,17 @@
 header {
   text-align: center;
+  border-bottom: 3px solid rgb(128, 112, 112);
+  margin-bottom: 24px;
+}
+
+main {
+  display: flex;
 }
 
 section {
   text-align: center;
   width: 300px;
+  margin-left: 30px;
 }
 
 ul {
@@ -21,6 +28,8 @@ ul li {
   user-select: none;
   margin-bottom: 8px;
   list-style: none;
+  width: 200px;
+  margin: 8px auto;
 }
 
 ul li:hover {
