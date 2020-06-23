@@ -8,16 +8,15 @@
     }
     const ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = 'pink';
-    ctx.strokeStyle = '#f00';
-    ctx.fillRect(50, 50, 50, 50);
-    ctx.strokeRect(50, 50, 50, 50);
+    const g = ctx.createLinearGradient(0, 0, canvas.width, 0);
 
-    ctx.fillStyle = 'skyblue';
-    ctx.strokeStyle = '#00b';
+    g.addColorStop(0, '#f00');
+    g.addColorStop(0.3, '#0f0');
+    g.addColorStop(1, '#00f');
 
-    ctx.fillRect(70, 70, 50, 50);
-    ctx.strokeRect(70, 70, 50, 50);
+    ctx.fillStyle = g;
+
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
   draw();
 }
