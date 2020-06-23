@@ -8,10 +8,14 @@
     }
     const ctx = canvas.getContext('2d');
 
-    const g = ctx.createLinearGradient(0, 0, canvas.width, 0);
+    // const g = ctx.createLinearGradient(0, 0, canvas.width, 0);
+    const g = ctx.createRadialGradient(
+      canvas.width / 2, canvas.height / 2, 50,
+      canvas.width / 2 + 100, canvas.height / 2 + 200, 500
+    );
 
     g.addColorStop(0, '#f00');
-    g.addColorStop(0.3, '#0f0');
+    g.addColorStop(0.1, '#0f0');
     g.addColorStop(1, '#00f');
 
     ctx.fillStyle = g;
