@@ -9,13 +9,14 @@
     const ctx = canvas.getContext('2d');
 
     const img = document.createElement('img');
-    img.src = 'img/bell.png';
+    img.src = 'img/sprite.png';
 
     img.addEventListener('load', () => {
-      // ctx.drawImage(img, 0, 0, 40, 40);
-      const pattern = ctx.createPattern(img, 'repeat-x');
-      ctx.fillStyle = pattern;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(
+        img,
+        70 * 2, 70, 70, 70,
+        0, 0, 35, 35
+        );
     });
   }
   draw();
