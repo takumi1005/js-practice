@@ -26,7 +26,12 @@
     constructor(drawer) {
       this.r = 100;
       this.drawer = drawer;
+
+      this.h = (new Date()).getHours();
+      this.m = (new Date()).getMinutes();
+      this.s = (new Date()).getSeconds();
     }
+
     drawFace() {
       for (let angle = 0; angle < 360; angle += 6) {
         this.drawer.draw(angle, ctx => {
@@ -44,8 +49,17 @@
       }
     }
 
+    drawHands() {
+      this.drawer.draw(this.h * 30 + this.m * 0.5, ctx => {
+        ctx.lineWidth = 6;
+        ctx.moveTo(0, 10);
+        ctx.lineTo(0, -this.r + 50);
+      });
+    }
+
     run() {
       this.drawFace();
+      this.drawHands();
     }
   }
 
