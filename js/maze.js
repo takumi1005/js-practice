@@ -10,12 +10,21 @@
   var map = [];
   map[0] = [0, 0, 0];
   map[1] = [0, 1, 1];
-  map[2] = [0, 0, 0]  
+  map[2] = [0, 0, 0];
+
   // Canvasで描画
   var col = 3; // 奇数
-  var row = 3  
+  var row = 3;
+
+  var startX = 0;
+  var startY = 0;
+  var goalX = col - 1;
+  var goalY = row - 1;
+
   var wallSize = 10;
-  var wallColor = '#3261AB'  
+  var wallColor = '#3261AB';
+  var routeColor = '#ff0088';
+
   var canvas = document.getElementById('mycanvas');
   if (!canvas || !canvas.getContext) {
     return false;
@@ -42,12 +51,24 @@
       if (map[x][y] === 1) {
           drawWall(x + 1, y + 1);
         }
+      if ((x === startX && y === startY) || (x === goalX && y === goalY)) {
+        drawRoute(x + 1, y + 1);
       }
+    }
   }
 
   // 壁を描画
   function drawWall(x, y) {
     ctx.fillStyle = wallColor;
+    drawRect(x, y);
+  }
+
+  function drawRoute(x, y) {
+    ctx.fillStyle = routeColor;
+    drawRect(x, y);
+    }
+
+  function drawRect(x, y) {
     ctx.fillRect(
       x * wallSize,
       y * wallSize,
