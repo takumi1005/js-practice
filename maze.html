@@ -38,10 +38,25 @@
   <a href="index.html">戻る</a>
   <script>
     (() => {
-      const map = [];
+      var map = [];
       map[0] = [0, 0, 0];
       map[1] = [0, 1, 1];
       map[2] = [0, 0, 0];
+
+      var col = 3;
+      var row = 3;
+
+      var wallSize = 10;
+      var wallColor = '#3261ab';
+
+      var canvas = document.getElementById('mycanvas');
+      if (!canvas || !canvas.getContext) {
+        return false;
+      }
+      var ctx = canvas.getContext('2d');
+
+      canvas.width = (col + 2) * wallSize;
+      canvas.height = (row + 2) * wallSize;
     })();
   </script>
 </body>
