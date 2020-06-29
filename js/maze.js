@@ -51,6 +51,46 @@
     };
   };
 
+  var View = function() {
+    this.wallSize = 10;
+    this.wallColor = '#3261AB';
+    this.routeColor = '#ff0088';
+
+    this.canvas = document.getElementById('mycanvas');
+    if (!this.canvas || !this.canvas.getContext) {
+      return false;
+    }
+    this.ctx = this.canvas.getContext('2d');
+    this.draw = function(maze) {
+      this.canvas.width  = (maze.col + 2) * this.wallSize;
+      this.canvas.height = (maze.row + 2) * this.wallSize;
+
+      // 上下の壁
+      for (var x = 0; x < maze.col + 2; x++) {
+        this.drawWall(x, 0);
+        this.drawWall(x, row + 1);
+      }
+
+      // 左右の壁
+      for (var y = 0; y < maze.row + 2; y++) {
+        this.drawWall(0, y);
+        this.drawWall(col + 1, y);
+      }
+
+      // 迷路の内部
+      for (var x = 0; x < maze.col; x++) {
+        for (var y = 0; y < maze.row; y++) {
+          if (maze.map[x][y] === 1) {
+              this.drawWall(x + 1, y + 1);
+            }
+          if ((x === maze.startX && y === maze.startY) || (x === maze.goalX && y === maze.goalY)) {
+            this.drawRoute(x + 1, y + 1);
+          }
+        }
+      }
+    };
+  };
+
   function reset() {
     var maze = new Maze(13, 13);
     maze.init();
