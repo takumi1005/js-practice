@@ -1,4 +1,67 @@
 (() => {
+
+  var Maze = function(col, row) {
+    this.map = [];
+    this.col = 13; // 奇数
+    this.row = 13;
+    this.startX = 0;
+    this.startY = 0;
+    this.goalX = col - 1;
+    this.goalY = row - 1;
+    this.points = [
+      [0, -1],
+      [0, 1],
+      [1, 0],
+      [-1, 0] //左
+    ];
+
+    this.rand = function() {
+      return Math.floor(Math.random() * (n + 1));
+    };
+    this.init() = function() {
+      for (var x = 0; x < col; x++) {
+        this.map[x] = [];
+        for (var y = 0; y < row; y++) {
+            this.map[x][y] = 0;
+        }
+      }
+      for (var x = 1; x < col; x += 2) {
+        for (var y = 1; y < row; y += 2) {
+          this.map[x][y] = 1;
+        }
+      }
+      for (var x = 1; x < col; x += 2) {
+        for (var y = 1; y < row; y += 2) {
+          do {
+            if (x === 1) {
+              // 上下左右に倒す
+              var r = this.points[this.rand(3)];
+            } else {
+              // 左以外に倒す
+              var r = this.points[this.rand(2)];
+            }
+          } while (this.map[x + r[0]][y + r[1]] === 1);
+            this.map[x + r[0]][y + r[1]] = 1;
+        }
+      }
+    };
+    this.draw() = function() {
+      var view = new View();
+      view.draw(this);
+    };
+  };
+
+  function reset() {
+    var maze = new Maze(13, 13);
+    maze.init();
+    maze.draw();
+  }
+
+  reset();
+
+  document.getElementById('reset').addEventListener('clicl', () => {
+    reset();
+  });
   // 迷路を配列で用意
 
   /*
@@ -20,7 +83,6 @@
   0 1 0 1 1
   0 1 0 0 0
   */
-
   var map = [];
   // map[0] = [0, 0, 0];
   // map[1] = [0, 1, 1];
