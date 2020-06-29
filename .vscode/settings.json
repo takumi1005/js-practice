@@ -1,3 +1,4 @@
 {
-  "prettier.vueIndentScriptAndStyle": true
+  "prettier.vueIndentScriptAndStyle": true,
+  "liveServer.settings.port": 5501
 }
