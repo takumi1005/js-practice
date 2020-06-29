@@ -30,6 +30,45 @@
   var col = 13; // 奇数
   var row = 13;
 
+  for (var x = 0; x < col; x++) {
+    map[x] = [];
+    for (var y = 0; y < row; y++) {
+      map[x][y] = 0;
+    }
+  }
+
+  var points = [
+    [0, -1],
+    [0, 1],
+    [1, 0],
+    [-1, 0] //左
+  ];
+
+  function rand(n) {
+    return Math.floor(Math.random() * (n + 1));
+  }
+
+  for (var x = 1; x < col; x +=2) {
+    for (var y =1; y < row; y +=2) {
+      do {
+        if (x === 1) {
+          // 上下左右に倒す
+          var r = points[rand(3)];
+        } else {
+          // 左以外に倒す
+          var r = points[rand(2)];
+        }
+      } while (map[x + r[0]][y + r[1]] === 1);
+      map[x + r[0]][y + r[1]] = 1;
+    }
+  }
+
+  for (var x = 1; x < col; x +=2) {
+    for (var y =1; y < row; y +=2) {
+      map[x][y] = 1;
+    }
+  }
+
   var startX = 0;
   var startY = 0;
   var goalX = col - 1;
