@@ -17,7 +17,21 @@ console.clear();
       // 28, 29, 30
       dates.unshift({
         date: d - i,
-        isTodat: false,
+        isToday: false,
+        isDisabled: true,
+      });
+    }
+    console.log(dates);
+  }
+
+  function getCalenderTail() {
+    const dates = [];
+    const lastDay = new Date(year, month + 1, 0).getDay();
+
+    for (let i = 1; i < 7 - lastDay; i++) {
+      dates.push({
+        date: i,
+        isToday: false,
         isDisabled: true,
       });
     }
@@ -31,12 +45,13 @@ console.clear();
     for (let i = 1; i <= lastDate; i++) {
       dates.push({
         date: i,
-        isTodat: false,
+        isToday: false,
         isDisabled: false,
       });
     }
     console.log(dates);
   }
   // getCalenderBody();
-  getCalenderHead();
+  // getCalenderHead();
+  getCalenderTail();
 }
