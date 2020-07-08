@@ -58,8 +58,14 @@ console.clear();
       ...getCalenderBody(),
       ...getCalenderTail(),
     ];
+    const weeks = [];
+    const weekCount = dates.length / 7;
 
-    console.log(dates);
+    for (let i = 0; i < weekCount; i++) {
+      weeks.push(dates.splice(0, 7));
+    }
+
+    console.log(weeks);
   }
 
   createCalender();
