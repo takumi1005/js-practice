@@ -6,7 +6,7 @@ console.clear();
   let year = 2020;
   let month = 4; //5月
 
-  function getCalenderHead() {
+  function getCalendarHead() {
     const dates = [];
     const d = new Date(year, month, 0).getDate();
     const n = new Date(year, month, 1).getDay();
@@ -24,7 +24,7 @@ console.clear();
     return dates;
   }
 
-  function getCalenderTail() {
+  function getCalendarTail() {
     const dates = [];
     const lastDay = new Date(year, month + 1, 0).getDay();
 
@@ -38,7 +38,7 @@ console.clear();
     return dates;
   }
 
-  function getCalenderBody() {
+  function getCalendarBody() {
     const dates = []; //date:日付, day:曜日
     const lastDate = new Date(year, month + 1, 0).getDate();
 
@@ -52,20 +52,24 @@ console.clear();
     return dates;
   }
 
-  function createCalender() {
+  function clearCalendar() {
     const tbody = document.querySelector('tbody');
 
     while (tbody.firstChild) {
       tbody.removeChild(tbody.firstChild);
     }
+  }
 
+  function renderTitle() {
     const title = `${year}/${String(month + 1).padStart(2, '0')}`;
     document.getElementById('title').textContent = title;
-
+  }
+  
+  function renderWeeks() {
     const dates = [
-      ...getCalenderHead(),
-      ...getCalenderBody(),
-      ...getCalenderTail(),
+      ...getCalendarHead(),
+      ...getCalendarBody(),
+      ...getCalendarTail(),
     ];
     const weeks = [];
     const weekCount = dates.length / 7;
@@ -93,6 +97,12 @@ console.clear();
     });
   }
 
+  function createCalendar() {
+    clearCalendar();
+    renderTitle();
+    renderWeeks();
+  }
+
   document.getElementById('prev').addEventListener('click', () => {
     month--;
     if (month < 0) {
@@ -100,7 +110,7 @@ console.clear();
       month = 11;
     }
 
-    createCalender();
+    createCalendar();
   });
 
   document.getElementById('next').addEventListener('click', () => {
@@ -110,8 +120,8 @@ console.clear();
       month = 0;
     }
 
-    createCalender();
+    createCalendar();
   });
 
-  createCalender();
+  createCalendar();
 }
