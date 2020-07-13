@@ -7,9 +7,17 @@ alert(win_width);
 let num1 = 5;
 let num2 = 8;
 alert(num1 + num2);
-*/
+
 // 文字列を足してアラートに表示(特定の文字列は取り除く)
 let text1 = "リンゴ・バナナ";
 let text2 = "レモン";
 let my_fruits = (text1 + text2).replace("バナナ",'');
 alert(my_fruits);
+*/
+
+// クラス名を取得しアラート表示
+$(function(){
+  $('li').on('click',function(){
+    alert($(this).attr('class'));
+  });
+});
