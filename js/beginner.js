@@ -44,8 +44,13 @@ $(function() {
 $(function() {
   $('p').removeClass('blue');
 });
-*/
+
 // クラスの付け剥がし
 $('p').click(function() {
   $(this).toggleClass('is-active');
+});
+*/
+// 要素頭に子要素を追加
+$(function() {
+  $('.target').prepend('<p>ダミーテキストA</p>');
 });
