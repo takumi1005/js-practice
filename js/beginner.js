@@ -13,7 +13,6 @@ let text1 = "リンゴ・バナナ";
 let text2 = "レモン";
 let my_fruits = (text1 + text2).replace("バナナ",'');
 alert(my_fruits);
-*/
 
 // クラス名を取得しアラート表示
 $(function(){
@@ -21,3 +20,8 @@ $(function(){
     alert($(this).attr('class'));
   });
 });
+*/
+// アラートを2秒後に出す
+setTimeout(() => {
+  alert("2秒たちました");
+  },2000);
