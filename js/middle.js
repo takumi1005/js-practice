@@ -45,9 +45,18 @@ $(function() {
     }
   });
 });
-*/
+
 // 引数に入れた文字列を返す関数の作成
 function moji(text) {
   return text;
 }
 alert(moji("こんにちは"));
+*/
+// 色を取得して変更
+$(function() {
+  $('li').on('click', function() {
+    if ($(this).css('background-color') == 'rgb(255, 0, 0)') {
+      $(this).css('background-color', 'rgb(0, 0, 255)');
+    }
+  });
+});
