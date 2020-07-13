@@ -14,7 +14,7 @@
     font-size: 20px;
     cursor: pointer;
 } */
-/* liの数を取得 */
+/* liの数を取得
 ul{
   margin: 0 auto 0 auto;
   display: flex;
@@ -25,4 +25,8 @@ li{
   width: 100px;
   background-color: #1d4177;
   margin-right: 10px;
+} */
+/* クラスを追加 */
+p.is-active {
+  color: red;
 }
