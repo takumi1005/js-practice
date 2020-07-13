@@ -59,7 +59,7 @@ $(function() {
 $(function() {
   $('.target').append('<p>ダミーテキストF</p>');
 });
-*/
+
 // 特定の要素の後ろ隣に要素を追加
 $(function() {
   $('.target').after(
@@ -71,4 +71,11 @@ $(function() {
     '<p>ダミーテキストJ</p>' +
     '</div>'
   );
+});
+*/
+// jsで文字を表示させる
+$(function() {
+  $('.trigger').click(function() {
+    $('.target').show();
+  });
 });
