@@ -86,10 +86,17 @@ $(function() {
     $('.target').hide();
   });
 });
-*/
+
 // 要素をフェードインさせる
 $(function () {
   $('.trigger').on('click', () => {
       $('.target').fadeIn('slow');
+  });
+});
+*/
+// 要素をフェードアウトさせる
+$(function() {
+  $('.trigger').on('click', () => {
+      $('.target').fadeOut('slow');
   });
 });
