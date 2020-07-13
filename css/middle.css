@@ -1,12 +1,12 @@
-/* 要素の横幅を取得
-.box {
+/* 要素の横幅を取得 */
+/* .box {
   width: 310px;
   height: 310px;
   background-color: red;
 } */
 
 /* カラーピッカーで取得した色を反映させる */
-.title{
+/* .title{
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   text-align: center;
   margin-top: 300px;
@@ -16,4 +16,23 @@
   display: block;
   margin: 0 auto;
   width: 100px;
+}*/
+/* flexを使わずにボックスの高さを揃える */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.list{
+    width: 1000px;
+    margin: 300px auto 0 auto;
+    overflow: hidden;
+}
+.list li{
+    width: 300px;
+    float: left;
+    padding: 20px;
+    background-color: pink;
+    margin-right: 20px;
 }
