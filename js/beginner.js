@@ -79,10 +79,17 @@ $(function() {
     $('.target').show();
   });
 });
-*/
+
 // jsで文字を消す
 $(function() {
   $('.trigger').click(function() {
     $('.target').hide();
+  });
+});
+*/
+// 要素をフェードインさせる
+$(function () {
+  $('.trigger').on('click', () => {
+      $('.target').fadeIn('slow');
   });
 });
