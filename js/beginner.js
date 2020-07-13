@@ -49,8 +49,13 @@ $(function() {
 $('p').click(function() {
   $(this).toggleClass('is-active');
 });
-*/
+
 // 要素頭に子要素を追加
 $(function() {
   $('.target').prepend('<p>ダミーテキストA</p>');
+});
+*/
+// 要素末に子要素を追加
+$(function() {
+  $('.target').append('<p>ダミーテキストF</p>');
 });
