@@ -51,7 +51,7 @@ function moji(text) {
   return text;
 }
 alert(moji("こんにちは"));
-*/
+
 // 色を取得して変更
 $(function() {
   $('li').on('click', function() {
@@ -60,3 +60,11 @@ $(function() {
     }
   });
 });
+*/
+// 引数が整数の時のみアラートを出す関数
+function seisuu(target) {
+  if( Number.isInteger(target)){
+    alert('これは整数です');
+  }
+}
+seisuu(7);
