@@ -72,10 +72,17 @@ $(function() {
     '</div>'
   );
 });
-*/
+
 // jsで文字を表示させる
 $(function() {
   $('.trigger').click(function() {
     $('.target').show();
+  });
+});
+*/
+// jsで文字を消す
+$(function() {
+  $('.trigger').click(function() {
+    $('.target').hide();
   });
 });
