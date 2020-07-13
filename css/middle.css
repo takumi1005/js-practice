@@ -1,0 +1,6 @@
+/* 要素の横幅を取得 */
+.box {
+  width: 310px;
+  height: 310px;
+  background-color: red;
+}
