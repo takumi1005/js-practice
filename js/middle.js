@@ -16,7 +16,7 @@ $(function() {
     $('.title').css('color', select_color);
   });
 });
-*/
+
 // flexを使わずにボックスの高さを揃える
 $(function() {
   let max_li = 0;
@@ -26,4 +26,12 @@ $(function() {
     }
   });
   $('li').height(max_li);
-})
+});
+*/
+// クリックした番目をアラートに出す
+$(function() {
+  $('li').on('click',function() {
+    let i = $('li').index(this);
+    alert("あなたは" + (i + 1) + "番目を押しました");
+  });
+});
