@@ -30,10 +30,15 @@ li{
 p.is-active {
   color: red;
 } */
-/* クラスを削除 */
+/* クラスを削除
 p.is-active {
   color: red;
 }
 p.blue.is-active {
   color: blue;
+} */
+
+/* クラスの付け剥がし */
+p.is-active {
+  color: red;
 }

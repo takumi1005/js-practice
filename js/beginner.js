@@ -39,8 +39,13 @@ $(function() {
 $(function() {
   $('p').addClass('is-active');
 });
-*/
+
 // クラスを削除
 $(function() {
   $('p').removeClass('blue');
+});
+*/
+// クラスの付け剥がし
+$('p').click(function() {
+  $(this).toggleClass('is-active');
 });
