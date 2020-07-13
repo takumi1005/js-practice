@@ -34,8 +34,13 @@ alert(fruits[1]);
 $(function() {
   alert("liタグの数は" + $('li').length + "です");
 });
-*/
+
 // クラスを追加
 $(function() {
   $('p').addClass('is-active');
+});
+*/
+// クラスを削除
+$(function() {
+  $('p').removeClass('blue');
 });

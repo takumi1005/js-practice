@@ -26,7 +26,14 @@ li{
   background-color: #1d4177;
   margin-right: 10px;
 } */
-/* クラスを追加 */
+/* クラスを追加
 p.is-active {
   color: red;
+} */
+/* クラスを削除 */
+p.is-active {
+  color: red;
+}
+p.blue.is-active {
+  color: blue;
 }
