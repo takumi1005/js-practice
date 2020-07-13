@@ -35,7 +35,7 @@ $(function() {
     alert("あなたは" + (i + 1) + "番目を押しました");
   });
 });
-*/
+
 // inputの値を取得して誕生日を祝う
 $(function() {
   const birthday = '1988-10-05';
@@ -45,3 +45,9 @@ $(function() {
     }
   });
 });
+*/
+// 引数に入れた文字列を返す関数の作成
+function moji(text) {
+  return text;
+}
+alert(moji("こんにちは"));
