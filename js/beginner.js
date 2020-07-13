@@ -54,8 +54,21 @@ $('p').click(function() {
 $(function() {
   $('.target').prepend('<p>ダミーテキストA</p>');
 });
-*/
+
 // 要素末に子要素を追加
 $(function() {
   $('.target').append('<p>ダミーテキストF</p>');
+});
+*/
+// 特定の要素の後ろ隣に要素を追加
+$(function() {
+  $('.target').after(
+    '<div class="target">' +
+    '<p>ダミーテキストF</p>' +
+    '<p>ダミーテキストG</p>' +
+    '<p>ダミーテキストH</p>' +
+    '<p>ダミーテキストI</p>' +
+    '<p>ダミーテキストJ</p>' +
+    '</div>'
+  );
 });
