@@ -1,4 +1,4 @@
-/* クラス名を取得 */
+/* クラス名を取得
 *{margin: 0;padding: 0;list-style: none;box-sizing: border-box;}
 .list{
     width: 1000px;
@@ -13,4 +13,16 @@
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+} */
+/* liの数を取得 */
+ul{
+  margin: 0 auto 0 auto;
+  display: flex;
+  list-style: none;
+}
+li{
+  height: 100px;
+  width: 100px;
+  background-color: #1d4177;
+  margin-right: 10px;
 }

@@ -25,7 +25,12 @@ $(function(){
 setTimeout(() => {
   alert("2秒たちました");
   },2000);
-*/
+
 // 配列から値を取得しアラートに表示
 let fruits = ["リンゴ", "メロン", "バナナ"];
 alert(fruits[1]);
+*/
+// liのタグの数をアラートに表示
+$(function() {
+  alert("liタグの数は" + $('li').length + "です");
+});
