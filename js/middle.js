@@ -98,8 +98,12 @@ function str_judge(str) {
   }
 }
 str_judge("特定の文字");
-*/
+
 // 文字列から整数に変換
 let ninja = 28;
 ninja = Number(ninja);
 alert(typeof ninja);
+*/
+// 配列からn番目の値を取得
+let ninja = [2, 4, 52, 9, 38];
+alert(ninja[3]);
