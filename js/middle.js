@@ -162,10 +162,17 @@ $(function() {
     $('.scroll-val').text($(this).scrollTop());
   });
 });
-*/
+
 // 要素内の最後に要素を挿入
 $(function() {
   $('.add').on('click', function() {
     $('.val').append($('input').val());
+  });
+});
+*/
+// ダブルクリックでアラートを表示
+$(function() {
+  $('.double').on('dblclick', function() {
+    alert("ダブルクリックされました");
   });
 });
