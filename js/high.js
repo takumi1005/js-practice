@@ -30,9 +30,31 @@
 // alert(ninja("こんにちは"));
 
 // 引数の文字列が配列に含まれているかを判断する関数
-const fruits = ["リンゴ", "みかん", "バナナ"];
-function judge(str) {
-  return fruits.indexOf(str) >= 0 ? true : false;
+// const fruits = ["リンゴ", "みかん", "バナナ"];
+// function judge(str) {
+//   return fruits.indexOf(str) >= 0 ? true : false;
+// }
+// // alert(judge("リンゴ"));
+// alert(judge("メロン"));
+
+// 配列を結合する関数
+// const my_array = ["こん", "にち", "は"];
+const my_array = [3, 4, 3];
+function tasu(my_array) {
+  let res = null;
+
+  const array_string = my_array.every((item) => {
+    return typeof item == "string";
+  });
+
+  if (array_string) {
+    res = my_array.join('');
+  } else {
+    res = my_array.reduce(function(p, c) {
+      return p + c;
+    });
+  }
+  return res;
 }
-// alert(judge("リンゴ"));
-alert(judge("メロン"));
+
+alert(tasu(my_array));
