@@ -169,10 +169,17 @@ $(function() {
     $('.val').append($('input').val());
   });
 });
-*/
+
 // ダブルクリックでアラートを表示
 $(function() {
   $('.double').on('dblclick', function() {
     alert("ダブルクリックされました");
+  });
+});
+*/
+// 入力値が変わったら表示
+$(function() {
+  $('input').on('change', function() {
+    $('.val').text($(this).val());
   });
 });
