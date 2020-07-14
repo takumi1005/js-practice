@@ -24,7 +24,15 @@
 // alert(judge);
 
 // 文字数をカウントする関数
-function ninja(str) {
-  return str.length >= 5 ? true : false;
+// function ninja(str) {
+//   return str.length >= 5 ? true : false;
+// }
+// alert(ninja("こんにちは"));
+
+// 引数の文字列が配列に含まれているかを判断する関数
+const fruits = ["リンゴ", "みかん", "バナナ"];
+function judge(str) {
+  return fruits.indexOf(str) >= 0 ? true : false;
 }
-alert(ninja("こんにちは"));
+// alert(judge("リンゴ"));
+alert(judge("メロン"));
