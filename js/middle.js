@@ -132,11 +132,18 @@ $(function() {
     $('.anser').text($(this).val());
   });
 });
-*/
+
 // 横スクロール値を取得
 $(function() {
   $('.x-scroll').on('scroll', function() {
     let scroll_val = $(this).scrollLeft();
     $('.scroll-val').text(scroll_val);
+  });
+});
+*/
+// 最後の要素を削除
+$(function() {
+  $('.delete').on('click', function() {
+    $('ul li:last-child').remove();
   });
 });
