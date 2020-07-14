@@ -176,10 +176,17 @@ $(function() {
     alert("ダブルクリックされました");
   });
 });
-*/
+
 // 入力値が変わったら表示
 $(function() {
   $('input').on('change', function() {
     $('.val').text($(this).val());
+  });
+});
+*/
+// リサイズされたら横幅を取得
+$(function() {
+  $(window).on('resize', function() {
+    $('.val').text($(this).width());
   });
 });
