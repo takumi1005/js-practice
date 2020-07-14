@@ -113,7 +113,15 @@ function my_uppercase(str) {
   alert(str.toUpperCase());
 }
 my_uppercase("ninjacode");
-*/
+
 // 最大値を取得
 let my_array = [2, 19, 59, 203, 5];
 alert(Math.max(...my_array));
+*/
+// 要素の複製
+$(function() {
+  $('.clone').on('click', function() {
+    let li_clone = $('li').eq(0).clone();
+    $('ul').append(li_clone);
+  });
+});
