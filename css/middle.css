@@ -96,3 +96,11 @@ li:nth-child(5){background-color: rgb(0, 0, 255);} */
   overflow-x:scroll;
   white-space: nowrap;
 } */
+
+/* 要素から属性を削除 */
+.blue{
+  color:blue;
+}
+#red{
+  color:red;
+}

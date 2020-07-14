@@ -140,10 +140,18 @@ $(function() {
     $('.scroll-val').text(scroll_val);
   });
 });
-*/
+
 // 最後の要素を削除
 $(function() {
   $('.delete').on('click', function() {
     $('ul li:last-child').remove();
+  });
+});
+*/
+// 要素から属性を削除
+$(function() {
+  $('[data-delete]').on('click', function() {
+    let my_attr = $(this).attr('data-delete');
+    $('[data-delete-target]').attr(my_attr, '');
   });
 });
