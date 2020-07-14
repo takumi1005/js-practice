@@ -106,9 +106,9 @@ li:nth-child(5){background-color: rgb(0, 0, 255);} */
 } */
 
 /* 「scrollしたら」を設定 */
-body{
+/* body{
   height:5000px;
 }
 .scroll-val{
   position: fixed;
-}
+} */
