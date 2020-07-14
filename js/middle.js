@@ -89,7 +89,7 @@ month_judge(5);
 let hairetu = [1, 3, 5, 7];
 hairetu.pop();
 alert(hairetu);
-*/
+
 // 特定の文字が含まれているかの判定
 let target_str = "特定の文字";
 function str_judge(str) {
@@ -98,3 +98,8 @@ function str_judge(str) {
   }
 }
 str_judge("特定の文字");
+*/
+// 文字列から整数に変換
+let ninja = 28;
+ninja = Number(ninja);
+alert(typeof ninja);
