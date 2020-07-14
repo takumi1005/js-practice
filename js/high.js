@@ -17,9 +17,14 @@
 // alert(futaketa);
 
 // 配列が全て整数かを判断
-const ninja = ["5", 6, "3"];
-const judge = ninja.every((item) => {
-  return typeof item == "number";
-});
-alert(judge);
+// const ninja = ["5", 6, "3"];
+// const judge = ninja.every((item) => {
+//   return typeof item == "number";
+// });
+// alert(judge);
 
+// 文字数をカウントする関数
+function ninja(str) {
+  return str.length >= 5 ? true : false;
+}
+alert(ninja("こんにちは"));
