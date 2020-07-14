@@ -1,5 +1,5 @@
 /* liタグの横幅を足して表示 */
-.anser{
+/* .anser{
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -20,4 +20,4 @@ li:nth-child(1){width: 200px;}
 li:nth-child(2){width: 120px;}
 li:nth-child(3){width: 300px;}
 li:nth-child(4){width: 80px;}
-li:nth-child(5){width: 160px;}
+li:nth-child(5){width: 160px;} */
