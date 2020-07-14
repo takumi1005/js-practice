@@ -72,7 +72,7 @@ seisuu(7);
 // 文字数をカウントしアラートに表示
 const mojisuu = "カウント";
 alert(mojisuu.length);
-*/
+
 // 今日の月をアラート
 const now = new Date();
 const now_month = now.getMonth() + 1;
@@ -84,3 +84,8 @@ function month_judge(month) {
   }
 }
 month_judge(5);
+*/
+// 配列から１番後ろを削除する処理
+let hairetu = [1, 3, 5, 7];
+hairetu.pop();
+alert(hairetu);
