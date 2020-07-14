@@ -98,9 +98,17 @@ li:nth-child(5){background-color: rgb(0, 0, 255);} */
 } */
 
 /* 要素から属性を削除 */
-.blue{
+/* .blue{
   color:blue;
 }
 #red{
   color:red;
+} */
+
+/* 「scrollしたら」を設定 */
+body{
+  height:5000px;
+}
+.scroll-val{
+  position: fixed;
 }

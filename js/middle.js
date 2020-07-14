@@ -147,11 +147,18 @@ $(function() {
     $('ul li:last-child').remove();
   });
 });
-*/
+
 // 要素から属性を削除
 $(function() {
   $('[data-delete]').on('click', function() {
     let my_attr = $(this).attr('data-delete');
     $('[data-delete-target]').attr(my_attr, '');
+  });
+});
+*/
+// 「scrollしたら」を設定
+$(function() {
+  $(window).on('scroll', function() {
+    $('.scroll-val').text($(this).scrollTop());
   });
 });
