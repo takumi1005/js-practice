@@ -84,8 +84,17 @@ function month_judge(month) {
   }
 }
 month_judge(5);
-*/
+
 // 配列から１番後ろを削除する処理
 let hairetu = [1, 3, 5, 7];
 hairetu.pop();
 alert(hairetu);
+*/
+// 特定の文字が含まれているかの判定
+let target_str = "特定の文字";
+function str_judge(str) {
+  if (str.indexOf(target_str) != -1) {
+    alert("含む");
+  }
+}
+str_judge("特定の文字");
