@@ -1,0 +1,23 @@
+/* liタグの横幅を足して表示 */
+.anser{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 300px 0 20px 0;
+}
+ul{
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  list-style: none;
+}
+li{
+  height: 100px;
+  background-color: #1d4177;
+  margin-right: 10px;
+}
+li:nth-child(1){width: 200px;}
+li:nth-child(2){width: 120px;}
+li:nth-child(3){width: 300px;}
+li:nth-child(4){width: 80px;}
+li:nth-child(5){width: 160px;}
