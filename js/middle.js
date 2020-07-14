@@ -125,10 +125,18 @@ $(function() {
     $('ul').append(li_clone);
   });
 });
-*/
+
 // フォーカスしたら文字を表示
 $(function() {
   $('input').focus(function() {
     $('.anser').text($(this).val());
+  });
+});
+*/
+// 横スクロール値を取得
+$(function() {
+  $('.x-scroll').on('scroll', function() {
+    let scroll_val = $(this).scrollLeft();
+    $('.scroll-val').text(scroll_val);
   });
 });

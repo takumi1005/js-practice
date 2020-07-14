@@ -87,3 +87,12 @@ li:nth-child(2){background-color: rgb(0, 0, 255);}
 li:nth-child(3){background-color: rgb(255, 0, 0);}
 li:nth-child(4){background-color: rgb(0, 0, 255);}
 li:nth-child(5){background-color: rgb(0, 0, 255);} */
+
+/* 横スクロール値を取得 */
+.x-scroll{
+  width: 200px;
+  padding: 30px 30px;
+  background-color: gray;
+  overflow-x:scroll;
+  white-space: nowrap;
+}
