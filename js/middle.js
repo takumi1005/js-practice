@@ -68,7 +68,19 @@ function seisuu(target) {
   }
 }
 seisuu(7);
-*/
+
 // 文字数をカウントしアラートに表示
 const mojisuu = "カウント";
 alert(mojisuu.length);
+*/
+// 今日の月をアラート
+const now = new Date();
+const now_month = now.getMonth() + 1;
+function month_judge(month) {
+  if (now_month == month) {
+    alert("今月の月です");
+  } else {
+    alert("今月の月ではありません");
+  }
+}
+month_judge(5);
