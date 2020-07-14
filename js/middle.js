@@ -103,7 +103,13 @@ str_judge("特定の文字");
 let ninja = 28;
 ninja = Number(ninja);
 alert(typeof ninja);
-*/
+
 // 配列からn番目の値を取得
 let ninja = [2, 4, 52, 9, 38];
 alert(ninja[3]);
+*/
+// 文字列を大文字に変換する関数
+function my_uppercase(str) {
+  alert(str.toUpperCase());
+}
+my_uppercase("ninjacode");
