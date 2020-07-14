@@ -60,7 +60,7 @@ $(function() {
     }
   });
 });
-*/
+
 // 引数が整数の時のみアラートを出す関数
 function seisuu(target) {
   if( Number.isInteger(target)){
@@ -68,3 +68,7 @@ function seisuu(target) {
   }
 }
 seisuu(7);
+*/
+// 文字数をカウントしアラートに表示
+const mojisuu = "カウント";
+alert(mojisuu.length);
